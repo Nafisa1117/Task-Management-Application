@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Navbar container */
+.navbar {
+ position: sticky;
+ top:0;
+ z-index: 1000;
+ background-color: #0e3a49;
+ height: 60px;
+ box-shadow: 0 4px 8px 0 rgba(161, 203, 248, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ padding-top: 3px;
+
+}
+
+.navIn{
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+
+}
+.navIn:last-child {
+  margin-right: 0; /* Remove the margin for the last div to eliminate extra space */
+}
+
+.navOn{
+  margin-left: 300px;
+}
+
+#navbar-title{
+  color: #5fb3c3;
+
+}
+#navbar-tit{
+  color: #f40909;
+  font-style: oblique;
+
+}
+
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: #f7f3f3;
+  margin-left: 7px;
+  transition: color 0.3s;
+
+}
+
+/* Active link styles */
+.navbar a.active {
+  font-weight: bold;
+}
+
+
+/* Style the router outlet (the content area) */
+router-outlet {
+  display: block; /* Ensure it's a block element */
+  margin-top: 10px;
+}
+
+
+
+.footer {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #0e3a49;
+  text-align: center;
+  color: #5fb3c3;
+  padding: 10px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+/* Styling for the sidebar */
+#sidebar {
+  position: fixed;
+  height: 100vh;
+  background-color: #135d73;
+  border-right: 2px solid #e1e2e3;
+  padding-top: 20px;
+  z-index: 900;
+}
+
+#sidebar ul.nav {
+  flex-direction: column;
+}
+
+#sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #5fb3c3;
+}
+
+#sidebar .nav-link.active {
+  background-color: #0e3a49;
+  color: #ffffff;
+}
+
+#sidebar .nav-link i {
+  margin-right: 10px;
+}
+
+
+

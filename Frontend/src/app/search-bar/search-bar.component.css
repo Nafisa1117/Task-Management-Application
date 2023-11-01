@@ -1,0 +1,24 @@
+.search-bar{
+ /* align-items: center; */
+ margin-left: 200px;
+ color: grey;
+ border: 2px solid rgb(99, 116, 99);
+border-radius: 5px;
+}
+
+input{
+  width: 500px;
+  border-radius: 2px;
+  border: grey;
+  height: 31px;
+  padding: 10px;
+}
+
+button{
+  height: 32px;
+  border-radius: 2px;
+  border: none;
+  border: grey;
+  color: white;
+  background-color: #0e3a49;
+}

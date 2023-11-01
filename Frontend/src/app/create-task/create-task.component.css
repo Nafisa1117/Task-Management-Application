@@ -1,0 +1,90 @@
+.create-task {
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(1, 1, 2, 0.1);
+  background-color: #eff6f8;
+  /* text-align: center; */
+  /* box-shadow: 0 4px 6px rgba(199, 235, 240, 0.1); */
+}
+
+.create-task h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #26849d;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.create-task h2:hover{
+  color:#0e3a49;
+}
+
+.create-task .form-group {
+  margin-bottom: 15px;
+}
+
+.create-task label {
+  /* display: block; */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #26849d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.create-task label:hover{
+  color: red;
+}
+
+.create-task input[type="text"],
+.create-task input[type="date"],
+.create-task textarea {
+  width: 95%;
+  padding: 10px;
+  /* border: 1px solid grey; */
+  border: 1px solid #c5f7fa;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-task button {
+  width: 25%;
+  padding: 10px;
+  background-color: #135d73;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+.create-task button:hover {
+  background-color: #26849d;
+}
+
+
+
+/* Style the select dropdown */
+select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #c5f7fa;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style the select dropdown options */
+select option {
+  background-color: #fff;
+  color: #656363;
+}
+
+/* Style the select dropdown when it's focused */
+select:focus {
+  outline: none;
+  border: 1px solid #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+

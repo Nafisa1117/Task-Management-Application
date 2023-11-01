@@ -1,0 +1,299 @@
+/* Style the container */
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  background-color: #eff6f8;
+  /* box-shadow: 0 4px 6px rgba(199, 235, 240, 0.1); */
+  width: auto;
+  box-shadow: 0 2px 4px rgba(1, 1, 2, 0.1);
+}
+
+/* Style the heading */
+.container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-style: normal;
+  color:#135d73;
+  padding-top: 22px;
+}
+
+/* Style the list items */
+.list-group-item {
+  padding: 20px;
+  border: 1px solid #eae6e6;
+  border-radius: 5px;
+  margin: 10px 70px;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(1, 1, 2, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style the task title */
+.list-group-item h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #46a8b9;
+  font-style: normal;
+}
+
+/* Style the task description */
+.list-group-item p {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #51a9b9;
+}
+
+/* Style the due date */
+.list-group-item p:nth-child(3) {
+  font-weight: bold;
+  color: #ff5733;
+  font-size: small;
+}
+
+/* Hover effect */
+.list-group-item:hover {
+  /* background-color: #0e3a49;
+  background: linear-gradient(135deg, #00c6ff, #2962ff);
+  transform: scale(1.02);
+  transition: background-color 0.2s, transform 0.2s; */
+  box-shadow: 0 0 20px rgba(139, 210, 249, 0.8); /* Add box-shadow effect on hover */
+  transform: scale(1.02);
+}
+
+
+/* Style the update link */
+.update-link {
+  color: #26849d; /* Icon color */
+  text-decoration: none; /* Remove underline */
+  margin-top: 10px;
+  display: inline-block; /* Display the link as a block element */
+}
+
+.update-link:hover {
+  color: #81f1f7; /* Hover effect color */
+}
+
+.delete-link{
+  color: rgb(221, 86, 86);
+}
+
+.delete-link:hover{
+  color: #ff5e00;
+}
+
+.icon-spacing {
+  margin: 0 10px; /* Adjust the margin as needed for your desired spacing */
+}
+
+.category{
+  /* background-color: rgb(241, 236, 236); */
+  padding: 5px;
+  margin-left: 78%;
+  margin-right: 3%;
+}
+.category label{
+  color: #135d73;
+  font-weight: bold;
+}
+/* CSS for Category Filter */
+#categoryFilter {
+  border: 1px solid #eae7e7;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  width: 130px;
+
+}
+/* Style the select dropdown */
+.category select {
+  padding: 20px;
+  border: 1px solid #fdfafa;
+  border-radius: 5px;
+  background-color: #eff4f5;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style the select dropdown options */
+select option {
+  background-color: #fff;
+  color: #1e135c;
+  font-size: 16px;
+}
+
+/* Style the select dropdown on hover and focus */
+select:hover,
+select:focus {
+  border: 1px solid #73f17b;
+  box-shadow: 0 0 5px rgba(53, 53, 54, 0.5);
+}
+
+
+
+
+/* High Priority */
+.high-priority {
+  /* background-color: #ff9999;  */
+  color: #cc0000; /* Dark red text color */
+  width: 30%;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* Medium Priority */
+.medium-priority {
+  /* background-color: #ffec99;  */
+  color: #cc6600; /* Dark orange text color */
+  width: 30%;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* Low Priority */
+.low-priority {
+  /* background-color: #99ff99;  */
+  color: #009900; /* Dark green text color */
+  width: 30%;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+
+
+
+
+/* Apply decimal numbering to the unordered list */
+/* ul {
+  list-style-type: decimal;
+} */
+
+
+/* Styling for Completed Task List */
+.completed-task-list {
+  background-color: #ffffff;
+  /* border: 2px solid #2ecc71; */
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font:bold;
+  margin-left: 50px;
+  margin-top: 80px;
+  width: 30%;
+  transition: box-shadow 0.2s;
+}
+
+.completed-task-list:hover{
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(139, 210, 249, 0.8); /* Add box-shadow effect on hover */
+  transform: scale(1.02);
+}
+
+.completed-task-list h2 {
+  color: #135d73;
+  font-size: 20px;
+  padding: 3%;
+  /* margin: 2px; */
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  color: rgb(17, 114, 29);
+}
+
+.task-list:hover{
+  color: black;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.task-list input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #e12929;
+}
+
+.task-list label {
+  font-size: 18px;
+  color: #323131;
+  cursor: pointer;
+}
+
+
+/* /* Icon Styles for High Priority */
+.high-priority-icon {
+  color: red; /* Choose a color for high priority */
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+/* Icon Styles for Medium Priority */
+.medium-priority-icon {
+  color: orange; /* Choose a color for medium priority */
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+/* Icon Styles for Low Priority */
+.low-priority-icon {
+  color: green; /* Choose a color for low priority */
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.priority-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Style the search results container */
+.search-results {
+  margin-top: 20px;
+}
+
+/* Style the search results heading */
+.search-results h2 {
+  font-size: 20px;
+  color: #333; /* Adjust the color as needed */
+}
+
+/* Style the search results list */
+.search-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the search results list items */
+.search-results li {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #666; /* Adjust the color as needed */
+}
+
+/* Style the "No results found" message */
+.no-results-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f00; /* Adjust the color as needed */
+}
+
+.tit{
+  color:#135d73;
+  font-size: 15px;
+}

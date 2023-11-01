@@ -1,0 +1,17 @@
+<!-- <p>search-bar works!</p> -->
+
+
+<div class="search-bar">
+
+
+  <input
+    type="text"
+    placeholder="Search Tasks"
+    [(ngModel)]="searchTerm"
+    (input)="onInputChange()"
+  />
+  <button (click)="onInputChange()">
+    <i class="fa fa-search"></i>
+  </button>
+
+</div>

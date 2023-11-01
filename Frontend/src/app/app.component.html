@@ -1,0 +1,81 @@
+<!--
+<!- <app-task-list></app-task-list> -->
+
+  <nav class="navbar">
+
+    <div class="navIn">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logoNav.png" alt="Your Logo" width="50" height="50" class="img-responsive">
+      </a>
+
+    </div>
+    <div class="navIn">
+      <h1 id="navbar-title">Task</h1>
+      <h1 id="navbar-tit">Minder</h1>
+    </div>
+
+ <!-- Include the search bar here -->
+ <app-search-bar (searchEmitter)="searchTasks($event)"></app-search-bar>
+
+
+  <!-- Icons for login and sign-up -->
+  <div class="navOn">
+    <a href="/login" class="navbar-icon">
+      <i class="fas fa-sign-in-alt"></i> <!-- Font Awesome login icon -->
+      <span>Login</span>
+    </a>
+    <a href="/signup" class="navbar-icon">
+      <i class="fas fa-user-plus"></i> <!-- Font Awesome sign-up icon -->
+      <span>Sign Up</span>
+    </a>
+  </div>
+
+  <!-- <h1 class="text-center">{{title}}</h1> -->
+</nav>
+
+<!-- hehe -->
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="tasks" routerLinkActive="active">
+              <i class="fas fa-tasks"></i>
+              Task List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/create-task" routerLinkActive="active">
+              <i class="fas fa-plus-circle"></i>
+              Add Task
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+       <!-- Main content area -->
+       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <!-- Page content goes here -->
+        <div class="container" style="padding-top: 20px;">
+
+          <router-outlet></router-outlet>
+        </div>
+      </main>
+
+
+<footer class="footer">
+  <div class="container">
+    <span>All Right Reserved 2020 @NafisaApp</span>
+  </div>
+</footer>
+
+<!-- media query -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+

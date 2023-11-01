@@ -1,0 +1,92 @@
+<!-- <div>
+  <label for="priorityFilter">Priority:</label>
+  <select id="priorityFilter" [(ngModel)]="selectedPriority" (change)="filterTasksByPriority()">
+    <option value="">All</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+</div> -->
+
+
+<div class="category">
+  <label for="categoryFilter">Category:</label>
+  <select id="categoryFilter" [(ngModel)]="selectedCategory" (change)="filterTasks()">
+    <option value="">All</option>
+    <option value="Personal">Personal</option>
+    <option value="Work">Work</option>
+    <option value="Shopping">Shopping</option>
+  </select>
+</div>
+
+<!-- Add this section to display search results -->
+<div *ngIf="searchResults.length > 0">
+  <h2>Search Results</h2>
+  <ul>
+    <li *ngFor="let result of searchResults">{{ result.title }}</li>
+  </ul>
+</div>
+
+
+<!-- List of tasks -->
+<div class="container">
+
+  <ul class="list-group">
+    <h1>Task List</h1>
+    <li *ngFor="let task of tasks" class="list-group-item">
+      <!-- <h2 class="mb-1">{{ task.title }}</h2> -->
+      <p class="mb-1"><strong class="tit">Title:</strong>{{task.title}}</p>
+
+      <!-- <p class="mb-1">Description: {{ task.description }}</p> -->
+      <p class="mb-1"><strong class="tit">Description: </strong>{{ task.description }}</p>
+
+      <!-- <p class="mb-1">Due Date: {{ task.dueDate | date:'medium' }}</p> -->
+      <p class="mb-1"><strong class="tit">Due Date: </strong >{{ task.dueDate | date:'medium' }}</p>
+
+
+      <div class="priority-container">
+        <!-- Render Priority Icon -->
+  <i *ngIf="task.priority === 'High'" class="material-icons high-priority-icon red-text">fiber_manual_record</i>
+  <i *ngIf="task.priority === 'Medium'" class="material-icons medium-priority-icon orange-text">fiber_manual_record</i>
+  <i *ngIf="task.priority === 'Low'" class="material-icons low-priority-icon green-text">fiber_manual_record</i>
+
+      <p [ngClass]="{'high-priority': task.priority === 'High', 'medium-priority': task.priority === 'Medium', 'low-priority': task.priority === 'Low'}">
+        <strong class="tit">Priority:</strong> {{ task.priority }}
+      </p>
+    </div>
+
+      <!-- Add the update icon and link -->
+      <a [routerLink]="['/update-task', task.id]" class="update-link">
+        <i class="fas fa-pencil-alt"></i>
+      </a>
+
+     <!-- Apply a CSS class for spacing between icons -->
+     <span class="icon-spacing"></span>
+
+
+      <!-- delete icon link -->
+      <a [routerLink]="['/delete-task', task.id]" class="delete-link">
+        <i class="fas fa-trash-alt"></i>
+      </a>
+
+
+    </li>
+  </ul>
+
+
+    <!-- Completed Task List -->
+    <div class="completed-task-list">
+      <h2>Completed Tasks</h2>
+      <ul class="task-list">
+        <li *ngFor="let task of tasks" [class.completed]="task.completed">
+          <input type="checkbox" [(ngModel)]="task.completed" (change)="updateCompletionStatus(task)">
+          {{ task.title }}
+        </li>
+      </ul>
+    </div>
+</div>
+
+
+
+
+
