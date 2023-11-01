@@ -20,3 +20,77 @@
 
 ## Demo
 
+
+----------
+## Introduction
+- Task management Application is a Web project.
+- Developed on Spring Boot(backend) with Angular(front-end) frameworks and MySql database.
+- “User” can delete, edit, add and check the completed tasks.
+- This web application is made secure and robust.
+
+-------------
+## Tech Stacks 
+- Angular
+- SpringBoot
+- Typescript
+- Java
+- MySQL
+- JPA
+- Rest API
+- HTML/CSS
+
+------------------
+## Development Setup
+
+### Prerequisites
+
+- Install [Node.js] which includes [Node Package Manager][npm]
+
+### Setting Up a Frontend Project
+
+Install the Angular CLI globally:
+
+```
+npm install -g @angular/cli
+```
+
+Create workspace:
+
+```
+ng new [PROJECT NAME]
+```
+
+Run the application:
+
+```
+cd [PROJECT NAME]
+ng serve
+```
+
+
+### Setting up a Backend project
+For building and running the application you need:
+
+- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Maven 3](https://maven.apache.org)
+
+### Running the application locally
+
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `de.codecentric.springbootsample.Application` class from your IDE.
+
+Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
+
+```shell
+mvn spring-boot:run
+```
+
+
+-------------------------------------
+
+
+
+
+
+
+  
+
