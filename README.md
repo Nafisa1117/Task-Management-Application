@@ -19,4 +19,4 @@
 </p>
 
 ## Demo
-![Untitled design](https://github.com/Nafisa1117/Task-Management-Application/assets/103953608/dd2bcd45-7a69-45a0-b408-347a8b3c2b36)
+
